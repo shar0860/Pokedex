@@ -1,0 +1,89 @@
+body {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container {
+    width: min(65em, 100%);
+    margin: 0 auto;
+    padding-inline: 1.5rem;
+    text-align: center;
+}
+
+.card {
+    position: relative;
+    cursor: pointer;
+}
+
+.card img {
+    border: 2px solid black;
+    width: 90%;
+}
+
+.pokemonsDiv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+#dialog {
+    
+}
+
+.hidden {
+    display: none;
+}
+
+.dialogHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dialogData {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.dialogData img {
+    width: 80%;
+}
+
+.dialogText {
+    display: flex;
+    flex-direction: column;
+}
+
+#dialogClose,
+.dialogTitle {
+    margin-left: 4rem;
+}
+
+.caught-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.caught {
+    display: none;
+}
+
+.white {
+    display: unset;
+    color: #fff;
+    filter: drop-shadow(0 0 0.75rem black);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+}
+
+.green {
+    background-color: green;
+}

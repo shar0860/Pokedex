@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POKEDEX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>POKEDEX</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div id="pokemonsDiv" class="pokemonsDiv"></div>
+        </div>
+    </main>
+    <footer class="footer">
+        <button id="more">Load More</button>
+    </footer>
+    <dialog id="dialog" class="dialog">
+        <div class="dialogContainer">
+            <div class="dialogHeader">
+                <h2 class="dialogTitle"></h2>
+                <button id="dialogClose"></button>
+            </div>
+            <div class="dialogData">
+                <img src="" alt="">
+                <div class="dialogText">
+                    <h3 class="types"></h3>
+                    <p class="typesText"></p>
+                    <h3 class="moves"></h3>
+                    <p class="movesText"></p>
+                    <button class="catch"></button>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <script src="script.js"></script>
+</body>
+</html>
